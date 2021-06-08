@@ -1,6 +1,6 @@
 # Авторизация пользователя на MERN стэк, сайт вакансии. (React Js, Express Js, MongoDB, Node Js).
 
-Для начало - npm install в папке Client и npm install в главной папке (в корне) AUTHORIZATION. <br />
+<b>Для начало</b> - npm install в папке Client и npm install в главной папке (в корне) AUTHORIZATION. <br />
 
 Для запуска - npm run dev (Сразу запускается и Front-End и Back-End) в главной папке (в корне) AUTHORIZATION. <br />
 
