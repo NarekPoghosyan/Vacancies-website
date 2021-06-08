@@ -1,8 +1,8 @@
 # Авторизация пользователя на MERN стэк, сайт вакансии. (React Js, Express Js, MongoDB, Node Js).
 
-<b>Для начало</b> - _npm install_ в папке _Client_ и npm install в главной папке (в корне) _AUTHORIZATION_. <br />
+<b>Для начало</b> - _npm install_ в папке _Client_ и _npm install_ в главной папке (в корне) _AUTHORIZATION_. <br />
 
-<b>Для запуска</b> - _npm run dev_ (Сразу запускается и Front-End и Back-End) в главной папке (в корне) _AUTHORIZATION_. <br />
+<b>Для запуска</b> - _npm run dev_ (Сразу запускается и <b>Front-End</b> и <b>Back-End</b>) в главной папке (в корне) _AUTHORIZATION_. <br />
 
 Во время ввода полей, пожалуйтса посмотрите количество символов, который проситься от вас.
 
