@@ -1,8 +1,8 @@
 # Авторизация пользователя на MERN стэк, сайт вакансии. (React Js, Express Js, MongoDB, Node Js).
 
-<b>Для начало</b> - npm install в папке Client и npm install в главной папке (в корне) AUTHORIZATION. <br />
+<b>Для начало</b> - _npm install_ в папке _Client_ и npm install в главной папке (в корне) _AUTHORIZATION_. <br />
 
-Для запуска - npm run dev (Сразу запускается и Front-End и Back-End) в главной папке (в корне) AUTHORIZATION. <br />
+<b>Для запуска</b> - _npm run dev_ (Сразу запускается и Front-End и Back-End) в главной папке (в корне) _AUTHORIZATION_. <br />
 
 Во время ввода полей, пожалуйтса посмотрите количество символов, который проситься от вас.
 
@@ -29,8 +29,8 @@
 ![Отдельная вакансия](https://i.imgur.com/eU4rTg2.png "Отдельная вакансия")
 
 ## Ради интереса можно взломать систему.
-Во-первых, тут я не должен был добавить файл config-ов.
-Во-вторых, я специально не сохранил Token в базе данных. Во время рендера компонента LoginPage просто проверяется есть ли Token в localStorage и активирован ли он. Я должен был взять этот Token из localStorage и проверить активирован ли он и совподает с Token - ом, который есть в базе данных. Вы можете просто добавить например такой обьект в localStorage и взломать систему. 
+Во-первых, тут я не должен был добавить файл _config_-ов.
+Во-вторых, я специально не сохранил Token в базе данных. Во время рендера страницы _LoginPage_ просто проверяется есть ли Token в localStorage и активирован ли он. Я должен был взять этот Token из localStorage и проверить активирован ли он и совподает с Token - ом, который есть в базе данных. Вы можете просто добавить например такой обьект в localStorage и взломать систему. 
 
 {
     token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGI2NTgyN2Q1MGRkYjFhYjBiMTc5MGEiLCJpYXQiOjE2MjI1NzIzNTUsImV4cCI6MTYyMjU3NTk1NX0.tHglAuCH1HwvC5CYKcq5sQ1r6DJXCUSZBB0zG_Wc2-4"
