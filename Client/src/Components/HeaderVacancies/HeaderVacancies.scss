@@ -1,0 +1,60 @@
+@mixin widHeiDisplay($w, $h, $d, $jc, $ai,) {
+    width: $w;
+    height: $h;
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin curPos($c, $p) {
+    cursor: $c;
+    position: $p;
+}
+
+.header_vacancies {
+    @include widHeiDisplay(100%, 150px, flex, space-around, center);
+    border-bottom: 1px solid lightgray;
+
+    button {
+        @include widHeiDisplay(200px, 35px, flex, center, center);
+        @include curPos(pointer, none);
+        border-radius: 5px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        
+        span {
+            @include curPos(pointer, relative);
+            display: inline-block;
+            transition: 0.5s;
+            }
+            
+            span:after {
+            @include curPos(none, absolute);
+            content: '\002B';
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+            }
+            
+            &:hover span {
+            padding-right: 25px;
+            }
+            
+            &:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    }
+
+    .create {
+        background-color: rgb(0, 168, 0);
+    }
+
+    .logout {
+        background-color: royalblue;
+    }
+
+}

@@ -1,0 +1,70 @@
+@mixin widHeiDis($w, $h, $d, $jc, $ai, $fd, $fw, $br) {
+    width: $w;
+    height: $h;
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    font-weight: $fw;
+    border-radius: $br;
+}
+
+.loginpage {
+    @include widHeiDis(500px, 700px, flex, space-around, center, column, bold, null);
+    font-size: 1rem;
+    font-family: cursive;
+
+    input {
+        @include widHeiDis(100%, 8%, null, null, null, null, null, 5px);
+        outline: none;
+        padding-left: 10px;
+        border: 1px solid lightgray;
+
+        &:focus {
+            transition: 0.3s linear;
+            -webkit-box-shadow: 0 0 10px royalblue;
+            box-shadow: 0 0 10px royalblue;
+        }
+
+    }
+
+    .login {
+            @include widHeiDis(40%, 8%, flex, center, center, null, bold, 5px);
+            cursor: pointer;
+            color: white;
+            text-transform: uppercase;
+            background-color: royalblue;
+            
+            span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+                }
+                
+                span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+                }
+                
+                &:hover span {
+                padding-right: 25px;
+                }
+                
+                &:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+    }
+
+    .gotoauth {
+        cursor: pointer;
+        font-weight: normal;
+        text-decoration: underline;
+    }
+
+}

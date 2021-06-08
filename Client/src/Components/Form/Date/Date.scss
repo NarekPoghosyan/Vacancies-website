@@ -1,0 +1,32 @@
+@mixin  widHei($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+label {
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.date {
+    @include widHei(100%, 10%);
+    display: flex;
+    justify-content: space-between;
+
+    select {
+        @include widHei(20%, 100%);
+        cursor: pointer;
+        border: 1px solid lightgray;
+        outline: none;
+        text-indent: 5px;
+
+        &:hover {
+            transition: 0.3s linear;
+            -webkit-box-shadow: 0 0 10px rgb(0, 68, 255);
+            box-shadow: 0 0 10px rgb(0, 68, 255);
+        }
+
+    }
+
+}
